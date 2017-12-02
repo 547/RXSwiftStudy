@@ -119,6 +119,19 @@ class SimpleTableViewTestViewController: UIViewController {
             }
         }.disposed(by: disposeBag)
         
+        //cell deleted
+        tableView.rx.itemDeleted.subscribe {[weak self] (event) in
+            guard let section = event.element?.section, let row = event.element?.row else { return }
+            self?.viewModel.mutData[section].items.remove(at: row)
+            if let da = self?.viewModel.mutData {
+                variableData.value = da
+            }
+        }.disposed(by: disposeBag)
+        
+        
+        
+        
+        
         //MARK:点击cell
         tableView.rx.itemSelected.subscribe {[weak self] (indexPath) in
             guard let indexpath = indexPath.element else { return }
