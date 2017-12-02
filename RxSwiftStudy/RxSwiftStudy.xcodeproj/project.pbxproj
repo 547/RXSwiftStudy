@@ -15,7 +15,6 @@
 		1452CC071FD25DDA00A3090B /* RxSwiftStudyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1452CC061FD25DDA00A3090B /* RxSwiftStudyUITests.swift */; };
 		1452CC1A1FD25F7A00A3090B /* SimpleTableViewTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1452CC141FD25F7900A3090B /* SimpleTableViewTestViewController.swift */; };
 		1452CC1B1FD25F7A00A3090B /* ButtonTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1452CC151FD25F7A00A3090B /* ButtonTestViewController.swift */; };
-		1452CC1C1FD25F7A00A3090B /* SchedulerContextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1452CC161FD25F7A00A3090B /* SchedulerContextViewController.swift */; };
 		1452CC1D1FD25F7A00A3090B /* CoustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1452CC171FD25F7A00A3090B /* CoustomTableViewCell.swift */; };
 		1452CC1E1FD25F7A00A3090B /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1452CC181FD25F7A00A3090B /* TableViewController.swift */; };
 		1452CC1F1FD25F7A00A3090B /* UserTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1452CC191FD25F7A00A3090B /* UserTestViewController.swift */; };
@@ -56,7 +55,6 @@
 		1452CC081FD25DDA00A3090B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1452CC141FD25F7900A3090B /* SimpleTableViewTestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimpleTableViewTestViewController.swift; sourceTree = "<group>"; };
 		1452CC151FD25F7A00A3090B /* ButtonTestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonTestViewController.swift; sourceTree = "<group>"; };
-		1452CC161FD25F7A00A3090B /* SchedulerContextViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SchedulerContextViewController.swift; sourceTree = "<group>"; };
 		1452CC171FD25F7A00A3090B /* CoustomTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoustomTableViewCell.swift; sourceTree = "<group>"; };
 		1452CC181FD25F7A00A3090B /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		1452CC191FD25F7A00A3090B /* UserTestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserTestViewController.swift; sourceTree = "<group>"; };
@@ -117,12 +115,11 @@
 			isa = PBXGroup;
 			children = (
 				1452CC151FD25F7A00A3090B /* ButtonTestViewController.swift */,
-				1452CC171FD25F7A00A3090B /* CoustomTableViewCell.swift */,
-				1452CC161FD25F7A00A3090B /* SchedulerContextViewController.swift */,
-				1452CC141FD25F7900A3090B /* SimpleTableViewTestViewController.swift */,
-				1452CC201FD25FDE00A3090B /* Main.storyboard */,
 				1452CC181FD25F7A00A3090B /* TableViewController.swift */,
 				1452CC191FD25F7A00A3090B /* UserTestViewController.swift */,
+				1452CC171FD25F7A00A3090B /* CoustomTableViewCell.swift */,
+				1452CC141FD25F7900A3090B /* SimpleTableViewTestViewController.swift */,
+				1452CC201FD25FDE00A3090B /* Main.storyboard */,
 				1452CBE61FD25DDA00A3090B /* AppDelegate.swift */,
 				1452CBE81FD25DDA00A3090B /* ViewController.swift */,
 				1452CBED1FD25DDA00A3090B /* Assets.xcassets */,
@@ -368,7 +365,6 @@
 				1452CC1E1FD25F7A00A3090B /* TableViewController.swift in Sources */,
 				1452CBE91FD25DDA00A3090B /* ViewController.swift in Sources */,
 				1452CC1A1FD25F7A00A3090B /* SimpleTableViewTestViewController.swift in Sources */,
-				1452CC1C1FD25F7A00A3090B /* SchedulerContextViewController.swift in Sources */,
 				1452CC1F1FD25F7A00A3090B /* UserTestViewController.swift in Sources */,
 				1452CC1D1FD25F7A00A3090B /* CoustomTableViewCell.swift in Sources */,
 				1452CBE71FD25DDA00A3090B /* AppDelegate.swift in Sources */,

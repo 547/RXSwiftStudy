@@ -105,11 +105,11 @@ class SimpleTableViewTestViewController: UIViewController {
             print("--\(dataSource)--\(title)--\(dataItem)---")
             return dataItem
         }
-
+        //table view 绑定 数据源
         variableData.asObservable().bind(to: tableView.rx.items(dataSource: data)).disposed(by: disposeBag)
         
         
-        
+        //cell moved 事件监听
         tableView.rx.itemMoved.subscribe {[weak self] (event) in
             guard let destinationSection = event.element?.destinationIndex.section, let sourceSection = event.element?.sourceIndex.section, let sourceItem = self?.viewModel.mutData.remove(at: sourceSection) else { return }
             self?.viewModel.mutData.insert(sourceItem, at: destinationSection)
@@ -118,7 +118,6 @@ class SimpleTableViewTestViewController: UIViewController {
                 variableData.value = da
             }
         }.disposed(by: disposeBag)
-        
         
         //MARK:点击cell
         tableView.rx.itemSelected.subscribe {[weak self] (indexPath) in
@@ -161,7 +160,9 @@ class SimpleTableViewTestViewModel {
                 "000,008",
                 "Get the new view controller using segue.destinationViewController.Get the new view controller using segue.destinationViewController.Get the new view controller using segue.destinationViewController.Get the new view controller using segue.destinationViewController.Get the new view controller using segue.destinationViewController."]
     
+    //这个数据源含义： 4个section 每个 section 中有 1个 row PS:一个 SectionModelType 对象表示一个 section 的数据，SectionModelType 对象中的 items 则是 rows 的数据
     var mutData:[SimpleTableViewData] = [.init(items: [0]),.init(items: [1]),.init(items: [2]),.init(items: [22])]
+    
     
 }
 ///SectionModelType :table view sections data

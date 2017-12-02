@@ -15,6 +15,7 @@ public struct AnimatableSectionModel<Section: IdentifiableType, ItemType: Identi
     public init(model: Section, items: [ItemType]) {
         self.model = model
         self.items = items
+        
     }
     
 }
