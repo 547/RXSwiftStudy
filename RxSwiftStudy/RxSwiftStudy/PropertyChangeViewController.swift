@@ -43,7 +43,7 @@ class PropertyChangeViewController: UIViewController {
         
         
         test.array.value.test()
-        
+        [8:5,9:6].test()
         
         
     }
@@ -79,8 +79,12 @@ extension Array where Iterator.Element == Int {
         print(self)
     }
 }
-extension Dictionary where Key == String {
-    
+extension Dictionary where Key == Int {
+    func test() -> () {
+        for key in keys {
+            print(key + 10)
+        }
+    }
 }
 
 
