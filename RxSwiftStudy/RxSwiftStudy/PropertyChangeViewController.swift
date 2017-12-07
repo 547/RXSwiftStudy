@@ -43,7 +43,18 @@ class PropertyChangeViewController: UIViewController {
         
         
         test.array.value.test()
-        [8:5,9:6].test()
+        let dic = [8:5,9:6]
+        dic.test()
+        
+        let stringDic = ["red":"67", "blue":"67"]
+        let _ = stringDic.map { (item) -> Void in
+            guard let firstItem = stringDic.first else { return }
+            if firstItem == item {
+                print(" true ")
+            } else {
+                print(" false ")
+            }
+        }
         
         
     }
@@ -86,5 +97,18 @@ extension Dictionary where Key == Int {
         }
     }
 }
+
+
+typealias Item = (key:String , value:String)
+//MARK:自定义运算符
+func ==(first:Item, second:Item) -> Bool {
+    if first.key == second.key && first.value == second.value {
+        return true
+    }
+    return false
+}
+
+
+
 
 
