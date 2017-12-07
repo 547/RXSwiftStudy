@@ -42,6 +42,10 @@ class PropertyChangeViewController: UIViewController {
         }.disposed(by: disposeBag)
         
         
+        test.array.value.test()
+        
+        
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -64,8 +68,19 @@ class PropertyChangeViewController: UIViewController {
 class Test {
     //MARK:Variable可变，可以通过 asObservable 或 asDriver 成为可监听的
     let count = Variable(0)
-    var array = Variable(["3","2","0"])
+    var array = Variable([3,2,0])
     //MARK:Observable可监听,但是不可变
     var ob = Observable.just(9)
     
 }
+//MARK:where 后面的应该是 泛型， == 意思是 这个泛型现在的真实类型是 == 后面的类型，比如 extension Array where Iterator.Element == Int 就是说这个extension当数组里面的值都是Int类型的时候适用 而如果把 == 换成 ： 就是遵循某种协议
+extension Array where Iterator.Element == Int {
+    func test() -> () {
+        print(self)
+    }
+}
+extension Dictionary where Key == String {
+    
+}
+
+
